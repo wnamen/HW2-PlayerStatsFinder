@@ -1,0 +1,227 @@
+.App {
+  /*text-align: center;*/
+}
+
+.player-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://content.halocdn.com/media/Default/games/halo-wars-2/playlists/img_playlist_deathmatch_large-52ed7ce3b9bd455f86201f2533167246.png');
+  background-repeat: no-repeat;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 0 1vw;
+  box-shadow: 1px 1px 2px 2px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title-container h1 {
+  font-size: 4em;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+}
+
+.title-container p {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: white;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw;
+}
+
+.search-form h3 {
+  font-weight: 400;
+  color: white;
+}
+
+.search-form div {
+  margin: 1vw;
+}
+
+.search-form div input {
+  width: 100%;
+  font-size: 1em;
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+}
+
+.search-form div button {
+  width: 100%;
+  font-size: 1em;
+  font-family: 'Exo', sans-serif;
+  color: white;
+  background-color: #DF282A;
+  border-color: #DF282A;
+}
+
+.search-form div button:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .title-container img {
+    width: 100%;
+  }
+
+  .title-container h1 {
+    font-size: 7vw;
+  }
+
+  .title-container p {
+    font-size: 3vw;
+  }
+
+  .search-form {
+    flex-direction: row;
+  }
+
+  .search-form div {
+    margin: 2vw;
+  }
+
+}
+
+.player-stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vw;
+}
+
+.spinner-container {
+  padding: 20vh 0;
+}
+
+.spinner-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-container div div {
+  background-color: #DF282A;
+}
+
+.player-gamertag {
+  font-size: 4em;
+  margin-bottom: 3vw;
+}
+
+.player-stats-container hr {
+  border: 1px solid #DF282A;
+  width: 100%;
+}
+
+.view-selectors a {
+  margin: auto 3vw;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #DF282A;
+  color: white;
+}
+
+.global-stats-container, .general-stats-container, .leader-stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.global-stats-container h3, .general-stats-container h3, .leader-stats-container h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.stats-row, .card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid #DA1C1E;
+  background-color: #DCE1E5;
+  margin: 1vw 0;
+}
+
+.stats-row div, .card-row div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2vw 3vw;
+}
+
+.stat-result, .card-result {
+  font-weight: 500;
+}
+
+.stat-result {
+  margin-bottom: 0
+}
+
+.stat-title {
+  margin-top: 0;
+}
+
+.card-result {
+  font-size: 3em;
+}
+
+.card-title {
+  font-size: 1.5em;
+}
+
+.card-row div p {
+  margin: 0
+}
+
+footer {
+  margin-top: 10vw;
+  font-size: 0.7em;
+}
+
+@media only screen and (max-width: 600px) {
+  .stat-title {
+    font-size: 2vw;
+  }
+
+  .card-title {
+    font-size: 3vw;
+  }
+}
+
+.error-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7vw;
+}
+
+.error-message-container h1 {
+  font-weight: 500;
+  color: #DA1C1E;
+}
