@@ -46,3 +46,22 @@ const PORT = process.env.PORT || 9000
 app.listen(PORT, function() {
   console.log('Production Express server running at localhost:' + PORT)
 })
+
+// const hostname = 'hw2playerstatsfinder.herokuapp.com';
+// const port = 443;
+//
+// const options = {
+//   ca: fs.readFileSync('server/hw2playerstatsfinder_com.ca-bundle'),
+//   key: fs.readFileSync('server/hw2playerstatsfinder_com.key'),
+//   crt: fs.readFileSync('server/hw2playerstatsfinder_com.crt')
+// }
+//
+// const server = https.createServer(options, (req, res) => {
+//   res.writeHead(200);
+//   res.setHeader('Content-Type', 'text/plain');
+//   res.end('Welcome to Halo Wars 2 Player Stats Finder');
+// });
+//
+// server.listen(port, hostname, () => {
+//   console.log(`Server running at http://${hostname}:${port}/`);
+// })
