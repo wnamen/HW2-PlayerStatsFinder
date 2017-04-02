@@ -8,7 +8,7 @@ const statify = require('./statify')
 const app = express()
 
 // serve our static stuff like index.css
-app.use(express.static(__dirname))
+app.use(express.static(path.resolve(__dirname, '../client/build')));
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }))
 
