@@ -57,7 +57,7 @@
 }
 
 .search-form div input {
-  width: 100%;
+  width: 90%;
   font-size: 1em;
   font-family: 'Exo', sans-serif;
   text-align: center;
@@ -147,6 +147,7 @@
 }
 
 .global-stats-container h3, .general-stats-container h3, .leader-stats-container h3 {
+  text-align: center;
   font-size: 2em;
   font-weight: 400;
 }
