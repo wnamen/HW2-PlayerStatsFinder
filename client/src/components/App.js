@@ -117,6 +117,11 @@ class App extends Component {
 
         <footer>
           <center>
+            <div>
+              <a href="mailto:admin@hw2playerstatsfinder.com">Contact</a>&nbsp;|&nbsp;
+              <a target="_blank" href="http://www.williamnamen.com">About</a>
+            </div>
+            <p>{`Copyright © ${new Date().getFullYear()} Namen Technologies, Inc. All rights reserved.`}</p>
             <p>Halo Wars 2 © Microsoft Corporation. Halo Wars 2 Player Stat Finder was created under Microsoft's <a target="_blank" href="http://www.xbox.com/en-US/developers/rules">"Game Content Usage Rules"</a> using assets from Halo Wars 2, and it is not endorsed by or affiliated with Microsoft.</p>
           </center>
         </footer>

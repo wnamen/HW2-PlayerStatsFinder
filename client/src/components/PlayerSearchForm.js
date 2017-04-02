@@ -24,7 +24,7 @@ class PlayerSearchForm extends Component {
         <div className="title-container">
           <img alt="logo" src={logo}></img>
           <h1>Player Stats Finder</h1>
-          <p>The Official Home to Find Detailed Halo Wars 2 Player Stats</p>
+          <p>The Unofficial Home to Find Detailed Halo Wars 2 Player Stats</p>
         </div>
 
         <div className="search-form">
