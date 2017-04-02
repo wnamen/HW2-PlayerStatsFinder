@@ -21,7 +21,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/find-player', (req, res) => {
+app.get('/api/find-player', (req, res) => {
   const gamertag = ((req.query.gamertag).replace(/\s/g, '')).toLowerCase();
   console.log(gamertag);
 
@@ -41,6 +41,11 @@ app.get('/find-player', (req, res) => {
     res.status(404).send('Gamertag Not Found')
   }
 })
+
+// All remaining requests return the React app, so it can handle routing.
+app.get('*', function(request, response) {
+  response.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+});
 
 const PORT = process.env.PORT || 9000
 app.listen(PORT, function() {

@@ -24,7 +24,7 @@ class App extends Component {
 
   _onSearch = (gamertag) => {
     this.setState({loading: true, stats: undefined, errorMessage: false})
-    axios.get('http://localhost:9000/find-player', {params: {gamertag: gamertag}})
+    axios.get('/api/find-player', {params: {gamertag: gamertag}})
       .then(response => this.setState({gamertag: gamertag, stats: response.data, loading: false}))
       .catch(error => this.setState({errorMessage: true, loading: false}))
   }
