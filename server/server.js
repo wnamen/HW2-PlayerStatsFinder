@@ -22,10 +22,9 @@ app.use((req, res, next) => {
 });
 
 app.get('/api/find-player', (req, res) => {
-  const gamertag = ((req.query.gamertag).replace(/\s/g, '')).toLowerCase();
-  console.log(gamertag);
+  const gamertag = ((req.query.gamertag).toLowerCase());
 
-  if ((req.query.gamertag).length > 0) {
+  if ((gamertag).length > 0) {
     Promise.all([statify.getPlaylists(),statify.getPlayerInfo(gamertag)])
     .then(results => statify.getDetailedStats(results))
     .catch((error) => {
