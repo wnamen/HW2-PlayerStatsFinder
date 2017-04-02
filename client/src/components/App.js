@@ -93,7 +93,6 @@ class App extends Component {
 
   render = () => {
     const { stats, gamertag, errorMessage, loading } = this.state;
-    console.log(loading);
 
     return (
       <div className="App">
